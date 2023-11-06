@@ -1,0 +1,82 @@
+body {
+    background-color: #d5d6d7 !important;
+}
+
+nav .title{
+    border-right: 1px solid #c9c9c9;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -6px;
+    
+    background: -webkit-linear-gradient(90deg,#01cfd2,#ef07f3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    transition: .2s;
+
+    
+}
+
+@media(max-width:992px) {
+    nav .title{
+        border: none;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: -6px;
+        
+        background: -webkit-linear-gradient(90deg,#01cfd2,#ef07f3);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+        transition: .2s;
+    
+        
+    }
+}
+
+nav .title:hover {
+    text-shadow: 0 0 25px #1f164e;
+}
+
+nav .trips {
+    margin-top: 5px;
+}
+
+nav .hov {
+    transition: .2s;
+}
+
+nav .hov:hover{
+    transform: scale(1.1,1.1);
+    text-shadow: 0 0 12px #01cfd2;
+}
+
+nav .clc:hover {
+    color: #ffff;
+}
+
+nav .ch {
+    font-weight: bold;
+}
+
+.welcome {
+    background-color: rgb(158, 217, 219);
+}
+
+.welcome .content {
+    width: 90%;
+    margin: auto;
+}
+
+.section1 .title1 {
+    background: -webkit-linear-gradient(90deg,#01cfd2,#ef07f3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section1 .accBtn {
+    background: -webkit-linear-gradient(bottom,#e5e5e5,#ffffff);
+}
