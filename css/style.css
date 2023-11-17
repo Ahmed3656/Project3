@@ -18,8 +18,12 @@ nav .title{
 }
 
 @media(max-width:992px) {
+    nav{
+        height: auto !important;
+        opacity: 1 !important;
+    }
     nav .title{
-        border: none;
+        border: none !important;
         font-size: 22px;
         font-weight: bold;
         margin-top: -6px;
@@ -28,9 +32,7 @@ nav .title{
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     
-        transition: .2s;
-    
-        
+        transition: .2s; 
     }
 }
 
@@ -47,8 +49,23 @@ nav .hov {
 }
 
 nav .hov:hover{
+    transform: scale(1.2,1.2);
+    text-shadow: 0 0 12px #01cfd2;
+}
+
+nav .hov2 {
+    transition: .2s;
+}
+
+nav .hov2:hover{
     transform: scale(1.1,1.1);
     text-shadow: 0 0 12px #01cfd2;
+}
+
+
+
+nav .btnhov:hover{
+    opacity: 0.7;
 }
 
 nav .clc:hover {
@@ -118,7 +135,7 @@ nav .ch {
 
     background-color: rgba(32, 22, 80, 0.2);
     transition: 1s;
-    border-radius: 6px;
+    border-radius: 3.5px;
 }
 
 .section3 .cards .cardoverlay:hover::before {
@@ -203,7 +220,8 @@ nav .ch {
 }
 
 .section4 .cardhov .bdg1:hover {
-    background-color: #323232 !important;
+    background-color: #484848 !important;
+    color: #ffff !important;
 }
 
 .section4 .cardhov .bdg2 {
@@ -212,6 +230,7 @@ nav .ch {
 
 .section4 .cardhov .bdg2:hover {
     background-color: rgb(200, 0, 0)!important;
+    color: #ffff !important;
 }
 
 .section4 .logoicon {
@@ -221,4 +240,24 @@ nav .ch {
 
 .section4 .logoicon:hover {
     opacity: 0.7;
+}
+
+@media (min-width:768px){
+    footer .ftrbody {
+        width: 32%;
+    }
+}
+
+footer .imgftr {
+    box-shadow: 0px 0px 20px 10px #d2d1d1;
+
+    transition: 0.5s;
+}
+
+footer .imgftr:hover {
+    opacity: 0.7;
+}
+
+footer .ftrbody a:hover {
+    color: #ffffff !important;
 }

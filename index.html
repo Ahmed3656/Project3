@@ -13,83 +13,105 @@
 
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top opacity-75">
-          <div class="container-fluid">
-            <a class="navbar-brand ms-3" href="#"><img src="images/logo.jpg" alt="logo" width="55px" class="rounded-circle"></a>
-            <a class="title title1 nav-link active text-info bold px-2" aria-current="page" href="#">EGYPT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <header> <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top " style="height: 76px; opacity: 0.6;">
+          <div class="container-fluid ">
+            <input type="image" src="images/logo.jpg" class="  rounded-circle mx-3 shadow" alt="pic" height="60px"
+              width="65px">
+            <a class="title navbar-brand text-info m-3" href="#"
+              style="border-right:1px solid #ccc; padding-right: 10px; font-weight: bold;">EGYPT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               
                 <li class="nav-item">
-                  <a class="hov nav-link ms-2 text-info" href="#">Home</a>
+                  <a class="hov nav-link active text-info" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="hov nav-link text-info" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="trips hov nav-link dropdown-toggle border border-info rounded-3 py-1 text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="hov2 nav-link dropdown-toggle text-info border-2 border-info rounded-3" href="#"
+                    id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Trips
-                  </a>
-                  <ul class="dropdown-menu opacity-85">
-                    <li><a class="ch dropdown-item text-info" href="#">Cairo</a></li>
-                    <li><a class="ch dropdown-item text-info" href="#">Alexandria</a></li>
-                    <li><hr class="ch dropdown-divider"></li>
-                    <li><a class="ch dropdown-item text-info" href="#">Luxor</a></li>
-                    <li><a class="ch dropdown-item text-info" href="#">Aswan</a></li>
-                    <li><a class="ch dropdown-item text-info" href="#">Sharm El Sheikh</a></li>
-                    <li><a class="ch dropdown-item text-info" href="#">El Glala</a></li>
-                    <li><a class="ch dropdown-item text-info" href="#">More...</a></li>
+                  </button>
+                  <ul class="dropdown-menu mt-3  fade " aria-labelledby="nav-Dropdown">
+                    <li><a class="dropdown-item text-info" target="_blank" href="">CAIRO</a></li>
+                    <li><a class="dropdown-item text-info" target="_blank" href=""> ALEX</a></li>
+                    <li>
+                      <hr class="dropdown-divider bg-info">
+                    </li>
+                    <li><a class="dropdown-item text-info" target="_blank" href="">LUXOR</a></li>
+                    <li><a class="dropdown-item text-info" target="_blank" href="">ASWAN</a></li>
+                    <li><a class="dropdown-item text-info" target="_blank" href="">SHARM EL SHIKH</a></li>
+                    <li><a class="dropdown-item text-info" target="_blank" href="">EL GLALA</a></li>
+                    <li><a class="dropdown-item text-info" target="_blank" href="">MORE ...</a></li>
+  
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled text-info" aria-disabled="true">About</a>
+                  <a class="nav-link disabled text-info">About</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="clc btn btn-outline-info" type="submit">Search</button>
-                <button class="clc btn btn-outline-info ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button> 
+              <form class="d-flex">
+                <input class="form-control m-3 border-2 border-info" type="search" placeholder="Search"
+                  aria-label="Search">
+  
               </form>
-            </div>
+              <form class="d-flex">
+                <button class="btnhov navbtn btn bg-info text-white me-3 border-2 border-info shadow-lg"
+                  type="submit">Search</button>
+                <button class="btnhov navbtn btn bg-info text-white border-2 border-info shadow-lg" type="button"
+                  data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+              </form> <!-- /form -->
+            </div> <!-- /navbar-collapse -->
+  
           </div>
         </nav>
+        <!-- /navbar -->
+      </header>
 
-        <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header bg-info">
-              <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">Login</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-info ">
+              <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+              <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+              <!-- form -->
               <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control border-info" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="m-3">
+                  <label class="form-label text-info">Email address</label>
+                  <input type="email" class="form-control text-info border-3 border-info rounded-2"
+                    aria-describedby="emailHelp">
+                  <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control border-info" id="exampleInputPassword1">
+                <div class="m-3">
+                  <label class="form-label text-info">Password</label>
+                  <input type="password" class="form-control text-info border-3 border-info rounded-2">
                 </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
-                </div>
-                <p style="margin-bottom: -1px;">Don't have an account?</p>
-                <button type="submit" class="btn btn-info text-light">Sign up</button>
+                <div class="m-3 form-check">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch">
+                    <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remmember me</label>
+                  </div>
+                </div> <!-- /form check -->
+  
               </form>
-            </div>
-            <div class="modal-footer flex-row justify-content-between">
-              <button type="button" class="login btn btn-info text-white">Login</button>
-              <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
+              <!-- /form -->
+              <div class="modal-footer d-flex  justify-content-between">
+                <button type="submit" class="btn btn-info text-light">Login</button>
+                <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">Close</button>
+              </div> <!-- /model-footer -->
+            </div> <!-- /model-body -->
+          </div> <!-- /modal-content -->
+        </div> <!-- /modal-dialog -->
       </div>
         
       <!-- icons -->
@@ -101,6 +123,7 @@
         <div><a href="#"><i class="fab fa-instagram-square"></i></a></div>
       </div>
 
+      <!-- carousel -->
       <main style="margin-top: 77px;">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -112,7 +135,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="images/cairo.jpg" class="d-block w-100" alt="Cairo" draggable="false" style="height: 90vh;">
-              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded-5">
+              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded">
                 <h2>CAIRO</h2>
                 <p>We had such a great time in Egypt!</p>
                 <a href="#" class="btn btn-info text-white text-shadow" target="_blank">Visit Us</a>
@@ -120,7 +143,7 @@
             </div>
             <div class="carousel-item">
               <img src="images/aswan.jpg" class="d-block w-100" alt="Aswan" draggable="false" style="height: 90vh;">
-              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded-5">
+              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded">
                 <h2>ASWAN</h2>
                 <p>Thank you, Aswan!</p>
                 <a href="#" class="btn btn-info text-white text-shadow" target="_blank">Visit Us</a>
@@ -128,7 +151,7 @@
             </div>
             <div class="carousel-item">
               <img src="images/sharm.jpg" class="d-block w-100" alt="Sharm" draggable="false" style="height: 90vh;">
-              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded-5">
+              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded">
                 <h2>SHARM EL SHIKH</h2>
                 <p>We love this city!</p>
                 <a href="#" class="btn btn-info text-white text-shadow" target="_blank">Visit Us</a>
@@ -136,7 +159,7 @@
             </div>
             <div class="carousel-item">
               <img src="images/glala.jpg" class="d-block w-100" alt="Glala" draggable="false" style="height: 90vh;">
-              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded-5">
+              <div class="carousel-caption d-md-block bg-info bg-opacity-50 rounded">
                 <h2>EL GLALA</h2>
                 <p>We love this city!</p>
                 <a href="#" class="btn btn-info text-white text-shadow" target="_blank">Visit Us</a>
@@ -154,6 +177,7 @@
         </div>
       </main>
 
+      <!-- section1 -->
       <section class="section1">
         <div class="welcome">
           <div class="content pt-4">
@@ -205,6 +229,7 @@
 
       <hr>
 
+      <!-- section2 -->
       <section class="section2">
         <div class="translate">
           <div class="mx-auto container-fluid text-center text-white rounded-2" style="background-color: #5a9597;">
@@ -263,6 +288,7 @@
           <div style="height: 350px; width: 100%; background-image: url(images/fixedimg.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"></div>
       </section>
 
+      <!-- section3 -->
       <section class="section3">
         <div class="mx-auto container-fluid text-center text-white rounded-2" style="background-color: rgb(175, 219, 220);">
           <h1 class="p-3" style="background: -webkit-linear-gradient(90deg,#01cfd2,#ef07f3); -webkit-text-fill-color: transparent; -webkit-background-clip: text; font-weight: bold;">
@@ -352,6 +378,7 @@
 
       <hr>
 
+      <!-- section4 -->
       <section class="section4">
         <div class="mx-auto container-fluid text-center">
           <h2 class="p-2" style="background: -webkit-linear-gradient(90deg,#01dade,#ef07f3); -webkit-text-fill-color: transparent; -webkit-background-clip: text; font-weight: bold;">
@@ -374,9 +401,9 @@
                   <div class="line my-2" style="background-color: rgb(56, 123, 216);"></div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</p>
                   <div>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-external-link-alt"></i> Podcast</span>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="far fa-clock"></i> 55 mins</span>
-                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-play"></i> Play video</span>
+                    <span class="bdg1 badge p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-external-link-alt"></i> Podcast</span>
+                    <span class="bdg1 badge p-2 mt-5 btn" style="background-color: #888;"><i class="far fa-clock"></i> 55 mins</span>
+                    <span class="bdg2 badge p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-play"></i> Play video</span>
                   </div>
                 </div>
 
@@ -399,9 +426,9 @@
                   <div class="line my-2" style="background-color: rgb(187, 47, 37);"></div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</p>
                   <div>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-external-link-alt"></i> Podcast</span>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="far fa-clock"></i> 55 mins</span>
-                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-play"></i> Play video</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-external-link-alt"></i> Podcast</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="far fa-clock"></i> 55 mins</span>
+                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-play"></i> Play video</span>
                   </div>
                 </div>
 
@@ -424,9 +451,9 @@
                   <div class="line my-2" style="background-color: rgb(50, 210, 38);"></div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</p>
                   <div>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-external-link-alt"></i> Podcast</span>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="far fa-clock"></i> 55 mins</span>
-                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-play"></i> Play video</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-external-link-alt"></i> Podcast</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="far fa-clock"></i> 55 mins</span>
+                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-play"></i> Play video</span>
                   </div>
                 </div>
 
@@ -449,9 +476,9 @@
                   <div class="line my-2" style="background-color: rgb(199, 196, 1);"></div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</p>
                   <div>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-external-link-alt"></i> Podcast</span>
-                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn"><i class="far fa-clock"></i> 55 mins</span>
-                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn"><i class="fas fa-play"></i> Play video</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-external-link-alt"></i> Podcast</span>
+                    <span class="bdg1 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="far fa-clock"></i> 55 mins</span>
+                    <span class="bdg2 badge text-bg-secondary p-2 mt-5 btn" style="background-color: #888;"><i class="fas fa-play"></i> Play video</span>
                   </div>
                 </div>
 
@@ -467,38 +494,38 @@
 
         <div class="container-fluid">
           <div class="row justify-content-center">
-            <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+            <div class="card m-3 bg-light " style="width: 250px; border-radius: 10px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
               <div class="card-body text-info d-flex flex-column text-center">
                 <h3 class="card-title mb-4">Follow us
                 </h3>
-                <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/twitter.jpg" type="image"
+                <input class="logoicon mb-2" style="align-self: center; border-radius: 20px;" src="images/twitter.jpg" type="image"
                   alt="twitter">
                 <a href="#" target="_blank" class="card-link h4 text-info  ">Go to link</a>
               </div>
             </div>
-            <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+            <div class="card m-3 bg-light " style="width: 250px; border-radius: 10px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
               <div class="card-body text-info d-flex flex-column text-center">
                 <h3 class="card-title mb-4">Contact us
                 </h3>
-                <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/whatsapp.jpg" type="image"
+                <input class="logoicon mb-2" style="align-self: center; border-radius: 20px;" src="images/whatsapp.jpg" type="image"
                   alt="whatsapp">
                 <a href="" target="_blank" class="card-link h4 text-info ">Go to link</a>
               </div>
             </div>
-            <div class="card m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+            <div class="card m-3 bg-light " style="width: 250px; border-radius: 10px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
               <div class="card-body text-info d-flex flex-column text-center">
                 <h3 class="card-title mb-4">Stay tuned
                 </h3>
-                <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/linkedin.jpg" type="image"
+                <input class="logoicon mb-2" style="align-self: center; border-radius: 20px;" src="images/linkedin.jpg" type="image"
                   alt="linkedin">
                 <a href="" target="_blank" class="card-link h4 text-info ">Go to link</a>
               </div>
             </div>
-            <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+            <div class="card m-3 bg-light " style="width: 250px; border-radius: 10px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
               <div class="card-body text-info d-flex flex-column text-center">
                 <h3 class="card-title mb-4">Watch videos
                 </h3>
-                <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/instagram.jpg" type="image"
+                <input class="logoicon mb-2" style="align-self: center; border-radius: 20px;" src="images/instagram.jpg" type="image"
                   alt="instagram">
                 <a href="" target="_blank" class="card-link h4 text-info ">Go to link</a>
               </div>
@@ -508,12 +535,35 @@
       </section>
 
       <footer>
-        
+        <div class="container-fluid d-flex row justify-content-between bg-info" style="margin: auto;">
+          <div class="ftrbody row col-md-3 my-3 text-center text-light">
+            <h4 class="my-auto py-3 text-light mb-3" style="text-align: center; font-weight: 350; border: 2px solid rgba(255, 255, 255, 0.3); border-width: 3px 0;"><img src="images/logoftr.png" alt="logo" class="imgftr" style="width: 80px; height: 80px; border-radius: 50%;"> Company</h4>
+            <p>Tel : 000-000-000</p>
+            <p>Address : EGYPT</p>
+            <p>Fax : 000-000-000</p>
+          </div>
+          <div class="ftrbody row col-md-3 my-3 text-center text-light">
+            <h4 class="my-auto py-3 text-light mb-3" style="text-align: center; font-weight: 350; border: 2px solid rgba(255, 255, 255, 0.3); border-width: 3px 0;"><img src="images/logoftr.png" alt="logo" class="imgftr" style="width: 80px; height: 80px; border-radius: 50%;"> Links</h4>
+            <p><a href="#" style="text-decoration: none; color: darkblue;">Visit us</a></p>
+            <p><a href="#" style="text-decoration: none; color: darkblue;">Take a look</a></p>
+            <p><a href="#" style="text-decoration: none; color: darkblue;">Your health is more important</a></p>
+          </div>
+          <div class="ftrbody row col-md-3 my-3 text-center text-light">
+            <h4 class="my-auto py-3 text-light mb-3" style="text-align: center; font-weight: 350; border: 2px solid rgba(255, 255, 255, 0.3); border-width: 3px 0;"><img src="images/logoftr.png" alt="logo" class="imgftr" style="width: 80px; height: 80px; border-radius: 50%;"> Vision</h4>
+            <p>Serveices for all</p>
+            <p>Provide best serveices</p>
+            <p>You will be better than before</p>
+          </div>
+
+          <hr style="background-color: rgb(255, 255, 255); height: 3px;">
+            <h4 class="text-center" style="background: -webkit-linear-gradient(90deg,#01cfd2,#ef07f3); -webkit-text-fill-color: transparent; -webkit-background-clip: text; font-weight: bold;">COPYRIGHT &copy 2023 WELCOME TO EGYPT, ALL RIGHTS RESERVED</h4>
+          <hr style="background-color: rgb(255, 255, 255); height: 3px; margin-bottom: 2rem;">
+        </div>
       </footer>
 
     <script src="bootsrap_js/bootstrap.bundle.min.js"></script>
     <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     </body>
