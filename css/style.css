@@ -164,11 +164,17 @@ nav .ch {
 }
 
 .section4 .cardhov img {
+    border-radius: 10px;
+    object-fit: cover;
     transition: .2s;
 }
 
-/* .section4 .cardhov:hover img{
-    transform: scale(1.1);
+.section4 .cardhov {
+    border-radius: 20px !important;
+}
+
+/* .section4 .cardhov:hover .imgdiv img{
+    transform: scale(1.01, 1.01);
 } */
 
 @media(min-width:768px) {
@@ -189,13 +195,24 @@ nav .ch {
         -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 0% 100%);
     }
     
+    .section4 .cardhov {
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+
     .section4 img {
         height: 200px !important;
         width: 100% !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
     }
 
     .section4 .imgdivright {
         order: 1 !important;
+    }
+
+    .section4 .crdtxt {
+        width: 100% !important;
     }
 }
 
